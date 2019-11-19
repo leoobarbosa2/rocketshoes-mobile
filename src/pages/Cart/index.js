@@ -26,7 +26,7 @@ import {
   BuyText,
 } from './styles';
 
-function Cart({ products }) {
+function Cart({ products, dispatch }) {
   return (
     <Container>
       <Products>
@@ -38,7 +38,11 @@ function Cart({ products }) {
                 <ProductTitle>{product.title}</ProductTitle>
                 <ProductPrice>{product.price}</ProductPrice>
               </ProductDescription>
-              <ProductDelete>
+              <ProductDelete
+                onPress={() =>
+                  dispatch({ type: 'REMOVE_FROM_CART', id: product.id })
+                }
+              >
                 <Icon name="delete-forever" size={20} color="#7159c1" />
               </ProductDelete>
             </ProductInfo>
