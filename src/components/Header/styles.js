@@ -33,6 +33,8 @@ export const CartText = styled.Text`
   border-radius: 9px;
 `;
 
+export const LogoView = styled.TouchableOpacity``;
+
 export const Logo = styled.Image.attrs({
   source: logo,
   resizeMode: 'cover',
