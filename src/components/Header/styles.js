@@ -17,7 +17,7 @@ export const Div = styled.View`
   justify-content: space-between;
 `;
 
-export const CartView = styled.View`
+export const CartView = styled.TouchableOpacity`
   flex-direction: row;
 `;
 

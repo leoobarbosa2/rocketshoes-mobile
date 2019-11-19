@@ -18,7 +18,6 @@ export const ProductImage = styled.Image`
 `;
 
 export const AmountPrice = styled.View`
-  background: #7159c1;
   border-radius: 4px;
   padding: 12px;
   flex-direction: row;
@@ -30,6 +29,7 @@ export const ProductTitle = styled.Text`
 `;
 
 export const ProductAmount = styled.Text`
+  margin-left: 5px;
   color: #fff;
 `;
 
