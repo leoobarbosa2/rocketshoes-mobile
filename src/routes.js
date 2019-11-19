@@ -18,6 +18,9 @@ const Routes = createAppContainer(
       defaultNavigationOptions: {
         header: <Header />,
       },
+      cardStyle: {
+        backgroundColor: '#000',
+      },
     }
   )
 );

@@ -13,6 +13,24 @@ export const Div = styled.View`
   flex-direction: row;
   background: #000;
   padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const CartView = styled.View`
+  flex-direction: row;
+`;
+
+export const CartText = styled.Text`
+  position: absolute;
+  left: 13px;
+  top: -6px;
+  text-align: center;
+  color: #fff;
+  background: #7159c1;
+  height: 18px;
+  width: 18px;
+  border-radius: 9px;
 `;
 
 export const Logo = styled.Image.attrs({
