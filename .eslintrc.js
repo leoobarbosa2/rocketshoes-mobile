@@ -25,6 +25,7 @@ module.exports = {
     'prettier'
   ],
   rules: {
+    'no-param-reassign': 'off',
     'react/state-in-constructor': 'off',
     'react/no-unused-state': 'off',
     'prettier/prettier': 'error',

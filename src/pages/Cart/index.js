@@ -51,7 +51,7 @@ function Cart({ products }) {
                     color="#7159c1"
                   />
                 </ButtonAction>
-                <AmountProduct>1</AmountProduct>
+                <AmountProduct>{product.amount}</AmountProduct>
                 <ButtonAction>
                   <Icon name="add-circle-outline" size={20} color="#7159c1" />
                 </ButtonAction>
