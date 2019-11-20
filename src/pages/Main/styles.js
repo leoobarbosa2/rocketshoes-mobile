@@ -1,8 +1,6 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
-  /* flex-direction: row; */
-`;
+export const Container = styled.View``;
 
 export const Product = styled.View`
   background: #fff;
