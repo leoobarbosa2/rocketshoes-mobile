@@ -23,3 +23,8 @@
   <p align="center">Axios</p>
   <p align="center">Immer</p>
   <p align="center">Intl</p>
+  
+<p align="center">
+<img  width="500" height="800" src="https://user-images.githubusercontent.com/54908803/69260024-f49e2f80-0b9d-11ea-8e4a-f1ed88ca5b79.gif">
+</p>
+
