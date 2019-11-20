@@ -12,13 +12,13 @@
   
   <h2 align="center">O que foi utilizado?   </h2>
   
-  <p align="center">- React Native</p>
-  <p align="center">-  React-navigation</p>
-  <p align="center">- Eslint / Prettier</p>
-  <p align="center">- React-vector Icons</p>
-  <p align="center">- React-Redux</p>
-  <p align="center">- Redux Saga</p>
-  <p align="center">- Styled Components</p>
-  <p align="center">- Axios</p>
-  <p align="center">- Immer</p>
-  <p align="center">- Intl</p>
+  <p align="center">React Native</p>
+  <p align="center">React-navigation</p>
+  <p align="center">Eslint / Prettier</p>
+  <p align="center">React-vector Icons</p>
+  <p align="center">React-Redux</p>
+  <p align="center">Redux Saga</p>
+  <p align="center">Styled Components</p>
+  <p align="center">Axios</p>
+  <p align="center">Immer</p>
+  <p align="center">Intl</p>
