@@ -8,7 +8,20 @@
  O GoStack é um treinamento imersivo nas tecnologias Node.js, React JS e React Native e a Rocketseat é a empresa que ministra o curso/treinamento.
  
  <p>
-  Através do Desafio 07 do GoStack da Rocketseat, Foi designado que o projeto do RocketShoes Web tivesse sua versão mobile criada com React Native Utilizando Dos conceitos de Redux e Redux Saga
+  Através do Desafio 07 do GoStack da Rocketseat, Foi designado que o projeto do RocketShoes Web tivesse sua versão mobile criada com React Native.
+  
+  # O que foi utilizado?
+  
+  - React Native
+  - React-navigation
+  - Eslint / Prettier
+  - React-vector Icons
+  - React-Redux
+  - Redux Saga
+  - Styled Components
+  - Axios
+  - Immer
+  - Intl
    
  </p>
  
