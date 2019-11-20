@@ -22,10 +22,3 @@
   <p align="center">- Axios</p>
   <p align="center">- Immer</p>
   <p align="center">- Intl</p>
-
- 
- <p align="center">Breve demonstração do aplicativo:</p>
- 
-![Alt Text](https://user-images.githubusercontent.com/54908803/69250727-fad8df80-0b8e-11ea-85a4-bc4875c3ed69.gif)
-
-
