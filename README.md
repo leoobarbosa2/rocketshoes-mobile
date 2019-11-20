@@ -1,15 +1,7 @@
  <h1>Rocketshoes mobile</h1>
  
  <p>
-  Através do Desafio 07 do GoStack da Rocketseat, Foi designado que o projeto do RocketShoes Web tivesse sua versão mobile criada com React Native!
-  
-
-  Neste modulo foram abordado:
- 
-  * Redux
-  * Redux Saga
-  
-  Além da utilização de outras ferramentas, como Es-lint.
+  Através do Desafio 07 do GoStack da Rocketseat, Foi designado que o projeto do RocketShoes Web tivesse sua versão mobile criada com React Native Utilizando Dos conceitos de Redux e Redux Saga
   
  </p>
 
