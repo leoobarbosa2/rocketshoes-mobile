@@ -1,8 +1,10 @@
 import React from 'react';
 
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import * as CartActions from '../../store/modules/Cart/actions';
 
 import {
   Container,
@@ -26,7 +28,15 @@ import {
   BuyText,
 } from './styles';
 
-function Cart({ products, dispatch }) {
+function Cart({ products, removeFromCart, updateAmount, total }) {
+  function increment(product) {
+    updateAmount(product.id, product.amount + 1);
+  }
+
+  function decrement(product) {
+    updateAmount(product.id, product.amount - 1);
+  }
+
   return (
     <Container>
       <Products>
@@ -38,17 +48,13 @@ function Cart({ products, dispatch }) {
                 <ProductTitle>{product.title}</ProductTitle>
                 <ProductPrice>{product.price}</ProductPrice>
               </ProductDescription>
-              <ProductDelete
-                onPress={() =>
-                  dispatch({ type: 'REMOVE_FROM_CART', id: product.id })
-                }
-              >
+              <ProductDelete onPress={() => removeFromCart(product.id)}>
                 <Icon name="delete-forever" size={20} color="#7159c1" />
               </ProductDelete>
             </ProductInfo>
             <ProductTotals>
               <ProductActions>
-                <ButtonAction>
+                <ButtonAction onPress={() => decrement(product)}>
                   <Icon
                     name="remove-circle-outline"
                     size={20}
@@ -56,17 +62,17 @@ function Cart({ products, dispatch }) {
                   />
                 </ButtonAction>
                 <AmountProduct>{product.amount}</AmountProduct>
-                <ButtonAction>
+                <ButtonAction onPress={() => increment(product)}>
                   <Icon name="add-circle-outline" size={20} color="#7159c1" />
                 </ButtonAction>
               </ProductActions>
-              <ProductSubTotal>259,60</ProductSubTotal>
+              <ProductSubTotal>{product.subtotal}</ProductSubTotal>
             </ProductTotals>
           </Product>
         ))}
         <Total>
           <TotalText>Total</TotalText>
-          <TotalPrice>R$ 1619,10</TotalPrice>
+          <TotalPrice>{total}</TotalPrice>
           <BuyButton>
             <BuyText>Finalizar Pedido</BuyText>
           </BuyButton>
@@ -77,7 +83,16 @@ function Cart({ products, dispatch }) {
 }
 
 const mapStateToProps = state => ({
-  products: state.cart,
+  products: state.cart.map(product => ({
+    ...product,
+    subtotal: product.price * product.amount,
+  })),
+  total: state.cart.reduce((total, product) => {
+    return total + product.price * product.amount;
+  }, 0),
 });
 
-export default connect(mapStateToProps)(Cart);
+const mapDispatchToProps = dispatch =>
+  bindActionCreators(CartActions, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);
